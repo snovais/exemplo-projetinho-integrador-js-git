@@ -1,0 +1,206 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    padding-top: 80px; /* Evita que o cabeçalho fixo cubra o conteúdo */
+    padding-bottom: 60px; /* Evita que o rodapé fixo cubra o conteúdo */
+}
+
+/* Cabeçalho Fixo */
+.cabecalho-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #1a237e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn-limpar {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-limpar:hover {
+    background-color: #d32f2f;
+}
+
+/* Container de Cards (Layout Lado a Lado) */
+.conteudo-principal {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.conteudo-principal h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estrutura do Card */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card h3 {
+    margin: 15px 0 10px 0;
+    color: #1a237e;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.foto-ficticia {
+    font-size: 50px;
+    background-color: #e8eaf6;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+/* Botões dos Cards */
+.btn-card {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-card:hover {
+    background-color: #0d47a1;
+}
+
+/* Classe de Mudança de Cor (Inserida pelo JavaScript do Aluno 2) */
+.card.selecionado-ativo {
+    border: 2px solid #4caf50;
+    background-color: #e8f5e9;
+}
+
+.btn-card.botao-selecionado {
+    background-color: #4caf50;
+}
+
+/* Seção do Formulário Obrigatório */
+.secao-formulario {
+    background-color: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.secao-formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #1a237e;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #1a237e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #0d47a1;
+}
+
+/* Estilos dos Alertas de Validação */
+#mensagem-alerta {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.erro { color: #ff5252; }
+.sucesso { color: #4caf50; }
+
+/* Rodapé Fixo */
+.rodape-fixo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    z-index: 1000;
+}

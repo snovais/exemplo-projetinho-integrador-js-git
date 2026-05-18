@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Coletivo — Vitrine Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Fixo -->
+    <header class="cabecalho-fixo">
+        <div class="logo">MinhaLoja</div>
+        <button id="btn-limpar">Limpar Seleções</button>
+    </header>
+
+    <!-- Conteúdo Principal (Cards) -->
+    <main class="conteudo-principal">
+        <h2>Nossos Serviços</h2>
+        <div class="container-cards">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="foto-ficticia">💻</div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites modernos e responsivos.</p>
+                <button class="btn-card">Selecionar</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="foto-ficticia">🎨</div>
+                <h3>Design UI/UX</h3>
+                <p>Planejamento visual e experiência do usuário.</p>
+                <button class="btn-card">Selecionar</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="foto-ficticia">🚀</div>
+                <h3>Marketing Digital</h3>
+                <p>Estratégias de SEO e anúncios online.</p>
+                <button class="btn-card">Selecionar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Seção do Formulário Obrigatório -->
+    <section class="secao-formulario">
+        <h2>Solicitar Atendimento</h2>
+        <form id="meu-formulario">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Digite seu melhor e-mail">
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Dados</button>
+        </form>
+        <!-- Div para mostrar mensagens de erro ou sucesso -->
+        <div id="mensagem-alerta"></div>
+    </section>
+
+    <!-- Rodapé Fixo -->
+    <footer class="rodape-fixo">
+        <p>&copy; 2026 — Desenvolvido em Equipe na Aula Prática.</p>
+    </footer>
+
+    <!-- Scripts dos Alunos 2 e 3 -->
+    <script src="interacao.js"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
